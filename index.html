@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USDA Government Website Redesign.</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6e128b25d.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 <nav>
 
-    <div class="nav-image"><a href=""><img src="./images/nav logo.svg" alt=""></a>
-    </div>
+    <a href="" class="nav-image"><img src="./images/nav logo.svg" alt=""></a>
 
-<div id="container">
+<div class="container">
 
     <ul class="navigation">
         <li><a class="active" href="#">Home</a></li>
@@ -26,10 +27,8 @@
         <li><a href="#">Our Values</a></li>
         <li><a href="#">Media</a></li>
         <li><a href="#">Contact</a></li>
+        <a href="#" class="btn primary">Subscribe</a>
     </ul>
-
-<a href="#" class="btn primary">Subscribe</a>
-
     <div class="search">
         <span class="icon">
             <ion-icon name="search-outline" class="searchBtn"></ion-icon>
@@ -47,6 +46,9 @@
     
 </nav>     
 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 <script>
     let searchBtn = document.querySelector('.searchBtn');
     let closeBtn = document.querySelector('.closeBtn');
@@ -61,7 +63,7 @@
         closeBtn.classList.add('active');
         searchBtn.classList.add('active');
         menuToggle.classList.add('hide');
-        nav.classList.remove('open');
+        nav.classList.add('open');
     }
     closeBtn.onclick = function(){
         searchBox.classList.remove('active');
@@ -73,13 +75,13 @@
     menuToggle.onclick = function(){
         nav.classList.toggle('open');
         searchBox.classList.remove('active');
-        closeBtn.classList.remove('active');
+        closeBtn.classList.add('active');
         searchBtn.classList.remove('active');
+        menuToggle.classList.remove('hide');
     }
 </script>
 
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

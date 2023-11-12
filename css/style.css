@@ -66,25 +66,24 @@ nav {
 
 }
 
-#container {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-
-
-
 nav ul{
     position: relative;
     display: flex;
     gap: 60px;
-    margin-right: 80px;
+    margin-right: 60px;
+    align-items: center;
 }
 
 nav ul li{
     list-style: none;
+    
 }
 nav ul li a{
     position: relative;
@@ -201,13 +200,14 @@ nav .search .icon {
     position: relative;
     display: none;
     color: white;
+    padding-right: 10px;
 }
 
 
 
 
 
-@media (max-width: 800px){
+@media (max-width: 780px){
     .menuToggle {
         position: absolute;
         display: block;
@@ -224,28 +224,33 @@ nav .search .icon {
 
     nav .navigation{
         position: absolute;
-        display: block;
+        /*display: block;*/
         opacity: 0;
         visibility: hidden;
         left: 100%;
     }
 
+
     nav.open .navigation{
+        position: absolute;
+        top: 80px;
         opacity: 1;
         visibility: visible;
         left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         background: #05445E;
+        justify-content: center;
         color: white;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: 20vh;
         padding: 40px;
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        /*border-top: 1px solid rgba(0, 0, 0, 0.5);*/
 
     }
 
-    nav.open .navigation li a{
+    nav.open .navigation li {
         font-size: 20px;
     }
 
