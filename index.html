@@ -17,12 +17,63 @@
 <nav>
 
     <a href="" class="nav-image"><img src="./images/nav logo.svg" alt=""></a>
+    <a href="" class="mobile-nav-image"><img src="./images/mobile nav logo.png" alt=""></a>
 
 <div class="container">
 
     <ul class="navigation">
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Interests</a></li>
+
+        <li class="dropdown"><a href="#">Interests</a>
+            <div id="dropdown-content">
+
+                <div class="category one">
+                    <h4><a href="#">Research & Development</a></h4>
+                <ul>
+                    <li><a href="#">Animal</a></li>
+					<li><a href="#">Bio technology</a></li>
+					<li><a href="#">Broadband</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Snoopydoo</a></li>
+                </ul>
+                </div>
+
+                <div class="category two">
+                    <h4><a href="#">Preservation</a></h4>
+                    <ul>
+                        <li><a href="#">Catch the Bullet</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                    </ul>
+                </div>
+
+                <div class="category three">
+                    <h4><a href="#">Production & Programs</a></h4>
+                    <ul>
+                        <li><a href="#">Catch the Bullet</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Snoopydoo</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+        </li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Our Values</a></li>
         <li><a href="#">Media</a></li>
@@ -63,7 +114,7 @@
         closeBtn.classList.add('active');
         searchBtn.classList.add('active');
         menuToggle.classList.add('hide');
-        nav.classList.add('open');
+        nav.classList.remove('open');
     }
     closeBtn.onclick = function(){
         searchBox.classList.remove('active');
@@ -75,9 +126,8 @@
     menuToggle.onclick = function(){
         nav.classList.toggle('open');
         searchBox.classList.remove('active');
-        closeBtn.classList.add('active');
+        closeBtn.classList.remove('active');
         searchBtn.classList.remove('active');
-        menuToggle.classList.remove('hide');
     }
 </script>
 
