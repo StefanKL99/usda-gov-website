@@ -9,7 +9,7 @@
 
 li, a, h1, h2, h3, h4, h5, button {
     font-family: 'Poppins', sans-serif;
-    
+    font-weight: lighter;
 }
 
 
@@ -278,6 +278,13 @@ a.btn {
     
 }
 
+.secondary {
+    color: white;
+    background: #05445E;
+    
+    
+}
+
 
 .primary:hover {
     color: #05445E;
@@ -367,6 +374,8 @@ a.btn {
 
 .heroText {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 200px;
     z-index: 1;
     padding-left: 50px;
@@ -384,6 +393,14 @@ a.btn {
     line-height: 38px;
 }
 
+.hero_button .secondary{
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 550px;
+    z-index: 1;
+    margin-right: 200px;
+}
 
 
 
@@ -416,7 +433,7 @@ a.btn {
 
 .carousel_indicator{
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -429,7 +446,9 @@ a.btn {
     display: block;
     padding: .5rem;
     background-color: white;
-    border: none;
+    border-color: #05445E;
+    border-style: solid;
+    border-width: 1px;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color .5s ease-in-out;
@@ -489,3 +508,91 @@ a.btn {
 
 
 /*       HERO SECTION END       */
+
+
+/*          OUR VALUES            */
+
+.our_values{
+    padding: 100px;
+}
+
+
+.our_values_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.our_values_title h1{
+    font-size: 48px;
+    text-align: center;
+    color: #05445E;
+}
+
+
+.values_items{
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 30px;
+    
+    padding-top: 40px ;
+    
+}
+
+
+#our_values_icons{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+
+#our_values_icons p{
+   font-size: 20px;
+   text-align: center;
+   align-items:start;
+}
+
+.icon_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon_img{
+    padding-bottom: 50px;
+    width: 200px;
+}
+
+#grid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.categoryGridArea {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+@media (max-width: 780px){
+    #grid {
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+      }
+} 
