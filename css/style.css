@@ -555,7 +555,7 @@ a.btn {
 .values_items{
     display: flex; 
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 50px;
     position: relative;	
     padding-top: 40px ;
     
@@ -625,8 +625,8 @@ display: none;
 
 #grid {
     margin: 0px 5%;
-    display: grid;
-    /*grid-template-rows: 300px 300px 300px 300px;*/
+    /*display: grid;*/
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 
@@ -699,13 +699,15 @@ display: none;
   }
 
 
+/*                  blog                 */
+
 
 #blogGrid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "blog_1 blog_2"
-    "blog_3 blog_4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: "blog1 blog2"
+    "blog3 blog4";
     
 }
 
@@ -713,7 +715,6 @@ display: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* margin: 5px; */
     cursor: pointer;
     display: grid;
     align-content: end;
@@ -732,28 +733,30 @@ display: none;
 
 /*    blog posts     */
 
-#blog_1 {
-    grid-area: blog_1;
-    background-image: url('../images/blog_pic_1.png');
+#blog1 {
+    grid-area: blog1;
+    background-image: url("../images/blog_pic_1.png");
 }
-#blog_2 {
-    grid-area: blog_2;
+#blog2 {
+    grid-area: blog2;
     background-image: url("../images/blog_pic_2.png");
 }
-#blog_3 {
-    grid-area: blog_3;
+#blog3 {
+    grid-area: blog3;
     background-image: url("../images/blog_pic_3.png");
 }
-#blog_4 {
-    grid-area: blog_4;
+#blog4 {
+    grid-area: blog4;
     background-image: url("../images/blog_pic_4.png");
 }
 
 /*    blog posts end    */
 
+/*                  blog                 */
 
 
-/*   featured    */
+
+/*         featured           */
 
 #featureGrid{
     display: flex;
@@ -816,7 +819,7 @@ display: none;
     justify-content: end;
 }
 
-/*   featured    */
+/*         featured           */
 
 
 /*   return to top    */
