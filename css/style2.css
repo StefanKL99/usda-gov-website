@@ -388,42 +388,110 @@ a.btn {
 
 /*       HERO SECTION        */
 
-.heroText {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 200px;
-    z-index: 1;
-    padding-left: 50px;
-    
-}
 
-.heroText h1{
-    font-size: 48px;
-    font-weight: lighter;
-}
-
-.heroText p{
-    padding-top: 20px;
-    font-size: 20px;
-    line-height: 38px;
-}
-
-.hero_button .secondary{
-    position: absolute;
-    display: flex;
-    right: 0;
-    top: 550px;
-    z-index: 1;
-    margin-right: 200px;
-}
 
 /*       HERO SECTION END       */
 
 
+.hero-section {
+    background-color: rgba(212, 241, 244, 0.25);
+    text-align: center;
+    padding: 50px 0; /* Adjust the padding as needed */
+    height: 350px;
+}
+
+.hero-section h1 {
+    text-align: center;
+    margin-top: 70px;
+    color: #05445E; /* Adjust the text color as needed */
+    font-size: 50px;
+}
+
+.breadcrumb {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 14px;
+    gap: 10px;
+    color: #666; /* Adjust the text color as needed */
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007BFF; /* Adjust the link color as needed */
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
 
 
 
+.interests-headings{
+    display: flex;
+    padding-bottom: 50px;
+    color: #05445E;
+}
+
+.preservation, .research{
+    padding: 100px;
+}
+
+.preservation {
+    background-color: #189AB4;
+}
+
+.invert{
+    color: #EDF4F5;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between items as needed */
+     /* Adjust the left and right margin as needed */
+}
+.preserve-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 50px; /* Adjust the gap between items as needed */
+     /* Adjust the left and right margin as needed */
+    
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h2 {
+    color: #05445E;
+    margin: 0;
+    text-align: center;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
 
 
 
@@ -452,6 +520,10 @@ a.btn {
 }
 
 
+.toTop a img {
+    filter: invert(33%) sepia(99%) saturate(2664%) hue-rotate(191deg) brightness(50%) contrast(85%);
+}
+
 /*    FOOTER    */
 
 
@@ -472,6 +544,14 @@ a.btn {
 
 .socials a{
     padding-inline-end: 20px;
+}
+
+.socials a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials a:hover img {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
 }
 
 #footer{

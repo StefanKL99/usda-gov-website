@@ -18,6 +18,14 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Adjust the transition duration as needed */
+}
+
+.fade-out {
+    opacity: 0;
+}
 
 
 /*       NAVBAR        */
@@ -571,8 +579,22 @@ a.btn {
     height: 300px;
     
 }
+/*
+.icon_img {
+    transition: transform 0.3s ease-in-out;
+}
 
+.icon_img:hover {
+    transform: scale(1.2); 
+}*/
 
+#our_values_icons {
+    transition: transform 0.3s ease-in-out;
+}
+
+#our_values_icons:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
 
 
 #our_values_icons p{
@@ -685,6 +707,14 @@ display: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
 .card_content{
     padding: 0px 25px;
     text-align: center;
@@ -753,7 +783,14 @@ display: none;
 
 }
 
+#blogGrid .blogGridArea .text-box {
+    display: none;
+}
 
+/* Add this CSS code for the hover state */
+#blogGrid .blogGridArea:hover .text-box {
+    display: block;
+}
 
 /*    blog posts     */
 
@@ -836,6 +873,15 @@ display: none;
     
 }
 
+
+#featureImage {
+    transition: transform 0.3s ease-in-out;
+}
+
+#featureImage:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
 .Text{
     display: flex;
     flex-direction: column;
@@ -912,6 +958,10 @@ display: none;
     color:#05445E;
 }
 
+.toTop a img {
+    filter: invert(33%) sepia(99%) saturate(2664%) hue-rotate(191deg) brightness(50%) contrast(85%);
+}
+
 
 /*    FOOTER    */
 
@@ -933,6 +983,14 @@ display: none;
 
 .socials a{
     padding-inline-end: 20px;
+}
+
+.socials a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials a:hover img {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
 }
 
 #footer{

@@ -1,3 +1,50 @@
+// Example: Fade out on a link click
+/*const links = document.querySelectorAll('a'); // Add more specific selectors if needed
+
+links.forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.body.classList.add('fade-out');
+        const href = this.getAttribute('href');
+        setTimeout(() => {
+            window.location.href = href;
+        }, 500); // Adjust the timeout to match the transition duration
+    });
+}); */
+
+
+
+// JavaScript to toggle the page class and handle fade-out
+document.addEventListener('DOMContentLoaded', function () {
+   const body = document.querySelector('body');
+
+   // Add click event listeners to your navigation links
+   const links = document.querySelectorAll('.navigation a');
+   links.forEach(link => {
+       link.addEventListener('click', function (event) {
+           event.preventDefault();
+           
+           // Check if the link is navigating to the homepage or interests page
+           const href = this.getAttribute('href');
+           const isHomepageLink = href === 'index2.html' || href.toLowerCase().includes('home');
+
+           // Add the fade-out class
+           body.classList.add('fade-out');
+
+           // Wait for the transition to complete and navigate to the new page
+           setTimeout(() => {
+               if (isHomepageLink) {
+                   window.location.href = 'index.html'; // Adjust the URL as needed
+               } else {
+                   window.location.href = href;
+               }
+           }, 500); // Adjust the timeout to match the transition duration
+       });
+   });
+});
+
+
+
 let onSlide = false;
 
 window.addEventListener("load", () => {

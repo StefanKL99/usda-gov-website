@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="homepage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USDA Government Website Redesign.</title>
+    <title>homepage</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d6e128b25d.js" crossorigin="anonymous"></script>
-    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />-->
-    
-    
 </head>
 <body>
 
@@ -23,15 +18,16 @@
     <!--NAVIGATION BAR-->
 <nav>
 
-    <a href="" class="nav-image"><img src="./images/nav logo.svg" alt=""></a>
-    <a href="" class="mobile-nav-image"><img src="./images/mobile nav logo.svg" alt=""></a>
+    <a href="./index.html" class="nav-image"><img src="./images/nav logo.svg" alt=""></a>
+    <a href="./index.html" class="mobile-nav-image"><img src="./images/mobile nav logo.svg" alt=""></a>
 
 <div class="container">
 
     <ul class="navigation">
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="active" href="./index.html">Home</a></li>
 
-        <li class="dropdown"><a href="./index2.html">Interests</a>
+        <li class="dropdown" onmouseenter="openInterestsDropdown()" onmouseleave="closeInterestsDropdown()">
+            <a href="./interests.html">Interests</a>
             <div id="dropdown-content">
 
                 <div class="category one">
@@ -483,7 +479,34 @@
     }
 </script>
 
+<script>
+    // JavaScript to toggle the page class
+    document.addEventListener('DOMContentLoaded', function () {
+        const body = document.querySelector('body');
+        if (body.classList.contains('homepage')) {
+            // Add specific logic for the homepage if needed
+        } else if (body.classList.contains('interests')) {
+            // Add specific logic for the interests page if needed
+        }
+    });
+</script>
 
+
+<script>
+    let interestsTimeout; // Variable to store the timeout reference
+
+    function openInterestsDropdown() {
+        clearTimeout(interestsTimeout); // Clear any existing timeout
+        document.getElementById('dropdown-content').classList.add('open');
+    }
+
+    function closeInterestsDropdown() {
+        // Set a timeout to close the dropdown after a delay (e.g., 500ms)
+        interestsTimeout = setTimeout(() => {
+            document.getElementById('dropdown-content').classList.remove('open');
+        }, 500); // Adjust the delay as needed
+    }
+</script>
 
 </body>
 </html>
