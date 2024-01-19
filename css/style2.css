@@ -593,3 +593,51 @@ a.btn {
     height: 100px;
     padding-left: 50px;
 }
+
+
+/* Add this to your existing CSS or update the CSS file */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #chatbot {
+    width: 90px; /* Adjust the width as needed */
+    height: 90px; /* Adjust the height as needed */
+    background-color: #05445E; /* Replace with the desired background color */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#chatbot img{
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    height: auto;
+}
+  
+  #chatbotPopup {
+    display: none;
+    position: absolute;
+    bottom: 120px; /* Adjust the distance from the chatbot */
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  #chatbot:hover {
+    transform: translateY(-10px); 
+  }
+
+
+  #chatbot:hover + #chatbotPopup {
+    display: block;
+  }

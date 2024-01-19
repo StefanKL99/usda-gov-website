@@ -134,3 +134,13 @@ function slideIndicator(toIndex) {
    dotActive.classList.remove("carousel_dot__active");
    newDotActive.classList.add("carousel_dot__active");
 }
+
+
+
+// Add this to your existing JavaScript or create a new script file
+document.getElementById('chatbot').addEventListener('click', openChat);
+
+function openChat() {
+  // Add code to open your chat window or integrate with a chatbot service
+  alert('Chatbot clicked. Open chat window here.');
+}
