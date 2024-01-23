@@ -25,9 +25,9 @@
     <ul class="navigation">
         <li><a href="./index.html">Home</a></li>
 
-        <li class="dropdown" onmouseenter="openInterestsDropdown()" onmouseleave="closeInterestsDropdown()">
+        <li class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
             <a class="active" href="./interests.html">Interests</a>
-            <div id="dropdown-content">
+            <div id="dropdown-content" onmouseover="showDropdown()" onmouseout="hideDropdown()">
 
                 <div class="category one">
                     <h4><a href="#">Research & Development</a></h4>
@@ -35,42 +35,35 @@
                     <li><a href="#">Animal</a></li>
 					<li><a href="#">Bio technology</a></li>
 					<li><a href="#">Broadband</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Coronavirus</a></li>
+					<li><a href="#">Data</a></li>
+					<li><a href="#">Disaster Resource Centre</a></li>
+					<li><a href="#">Health &amp Safety</a></li>
+					<li><a href="#">Invasive species</a></li>
+					<li><a href="#">Opiods</a></li>
+					<li><a href="#">Research &amp Science</a></li>
+					<li><a href="#">Rural</a></li>
+					<li><a href="#">Trade</a></li>
                 </ul>
                 </div>
 
                 <div class="category two">
                     <h4><a href="#">Preservation</a></h4>
                     <ul>
-                        <li><a href="#">Catch the Bullet</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Farming</a></li>
+                        <li><a href="#">Food &amp Nutrition</a></li>
+                        <li><a href="#">Organic</a></li>
+                        <li><a href="#">Plants</a></li>
                     </ul>
                 </div>
 
                 <div class="category three">
                     <h4><a href="#">Production & Programs</a></h4>
                     <ul>
-                        <li><a href="#">Catch the Bullet</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Conservation</a></li>
+                        <li><a href="#">Forestry</a></li>
+                        <li><a href="#">Recreation</a></li>
+                        <li><a href="#">Urban Agriculture</a></li>
                     </ul>
                 </div>
             
@@ -391,23 +384,6 @@
             // Add specific logic for the interests page if needed
         }
     });
-</script>
-
-
-<script>
-    let interestsTimeout; // Variable to store the timeout reference
-
-    function openInterestsDropdown() {
-        clearTimeout(interestsTimeout); // Clear any existing timeout
-        document.getElementById('dropdown-content').classList.add('open');
-    }
-
-    function closeInterestsDropdown() {
-        // Set a timeout to close the dropdown after a delay (e.g., 500ms)
-        interestsTimeout = setTimeout(() => {
-            document.getElementById('dropdown-content').classList.remove('open');
-        }, 800); // Adjust the delay as needed
-    }
 </script>
 
 

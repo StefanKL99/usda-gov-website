@@ -25,9 +25,9 @@
     <ul class="navigation">
         <li><a href="./index.html">Home</a></li>
 
-        <li class="dropdown" onmouseenter="openInterestsDropdown()" onmouseleave="closeInterestsDropdown()">
+        <li class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
             <a class="active" href="./interests.html">Interests</a>
-            <div id="dropdown-content">
+            <div id="dropdown-content" onmouseover="showDropdown()" onmouseout="hideDropdown()">
 
                 <div class="category one">
                     <h4><a href="#">Research & Development</a></h4>
@@ -35,42 +35,35 @@
                     <li><a href="#">Animal</a></li>
 					<li><a href="#">Bio technology</a></li>
 					<li><a href="#">Broadband</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
-					<li><a href="#">Snoopydoo</a></li>
+					<li><a href="#">Coronavirus</a></li>
+					<li><a href="#">Data</a></li>
+					<li><a href="#">Disaster Resource Centre</a></li>
+					<li><a href="#">Health &amp Safety</a></li>
+					<li><a href="#">Invasive species</a></li>
+					<li><a href="#">Opiods</a></li>
+					<li><a href="#">Research &amp Science</a></li>
+					<li><a href="#">Rural</a></li>
+					<li><a href="#">Trade</a></li>
                 </ul>
                 </div>
 
                 <div class="category two">
                     <h4><a href="#">Preservation</a></h4>
                     <ul>
-                        <li><a href="#">Catch the Bullet</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Farming</a></li>
+                        <li><a href="#">Food &amp Nutrition</a></li>
+                        <li><a href="#">Organic</a></li>
+                        <li><a href="#">Plants</a></li>
                     </ul>
                 </div>
 
                 <div class="category three">
                     <h4><a href="#">Production & Programs</a></h4>
                     <ul>
-                        <li><a href="#">Catch the Bullet</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
-                        <li><a href="#">Snoopydoo</a></li>
+                        <li><a href="#">Conservation</a></li>
+                        <li><a href="#">Forestry</a></li>
+                        <li><a href="#">Recreation</a></li>
+                        <li><a href="#">Urban Agriculture</a></li>
                     </ul>
                 </div>
             
@@ -112,6 +105,49 @@
     <h1>Urban Agriculture</h1>
 </div>
  <!-- Hero Section END -->
+
+
+
+ <div class="two-column-section">
+    <div class="column">
+        <div class="sidebar">
+            <ul class="sidebar-navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Interests</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Values</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="second-column">
+        <section class="page-content">
+            <p>USDA is working to support urban agriculture as it plays an important role in growing not only fresh, healthy food, often where grocery stores are scarce, but also providing jobs, responding to climate change, and beautifying neighborhoods. <br> <br>Urban agriculture includes the cultivating, processing and distributing agricultural products in urban and suburban areas. Community gardens, rooftop farms, hydroponic, aeroponic, and aquaponic facilities, and vertical production are all examples of urban agriculture. Tribal communities and small towns may also be included.</p>
+        </section>
+        <div class="page-title">
+            <h2>USDA’s Office of Urban Agriculture and Innovative Production</h2>
+        </div>
+        <section class="page-content">
+            <p>USDA is committed to serving the needs of all kinds of agriculture, including urban agriculture and related benefits of extending regional and local food production and increasing access to healthy, fresh food.</p>
+        </section>
+    </div>
+</div>
+
+
+
+
+ <!-- <div class="main">
+    <div class="sidebar">
+        <ul class="sidebar-navigation">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+        </ul>
+    </div>-->
+
+
 
 
 
@@ -274,23 +310,6 @@
            // Add specific logic for the interests page if needed
        }
    });
-</script>
-
-
-<script>
-   let interestsTimeout; // Variable to store the timeout reference
-
-   function openInterestsDropdown() {
-       clearTimeout(interestsTimeout); // Clear any existing timeout
-       document.getElementById('dropdown-content').classList.add('open');
-   }
-
-   function closeInterestsDropdown() {
-       // Set a timeout to close the dropdown after a delay (e.g., 500ms)
-       interestsTimeout = setTimeout(() => {
-           document.getElementById('dropdown-content').classList.remove('open');
-       }, 800); // Adjust the delay as needed
-   }
 </script>
 
 

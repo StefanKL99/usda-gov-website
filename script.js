@@ -1,16 +1,18 @@
-// Example: Fade out on a link click
-/*const links = document.querySelectorAll('a'); // Add more specific selectors if needed
+let dropdownContent = document.getElementById('dropdown-content');
+let dropdownTimer;
 
-links.forEach(link => {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-        document.body.classList.add('fade-out');
-        const href = this.getAttribute('href');
-        setTimeout(() => {
-            window.location.href = href;
-        }, 500); // Adjust the timeout to match the transition duration
-    });
-}); */
+function showDropdown() {
+  clearTimeout(dropdownTimer);
+  dropdownContent.style.display = 'block';
+}
+
+function hideDropdown() {
+  // Set a delay (in milliseconds) before hiding the dropdown
+  dropdownTimer = setTimeout(function () {
+    dropdownContent.style.display = 'none';
+  }, 3000); // You can adjust the delay as needed
+}
+
 
 
 

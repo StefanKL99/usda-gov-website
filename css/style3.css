@@ -345,9 +345,15 @@ a.btn {
     color: #05445E;
 }
 
+.category h4 a {
+    font-weight: bold;
+}
+
+
+
 #dropdown-content ul li{
     margin: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     list-style-type: none;
     
 }
@@ -394,7 +400,7 @@ a.btn {
 
 
 .hero-section {
-    background-image: url('../images/featured\ img-4.png');
+    background-image: url('../images/UA_heroImage.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.7);
@@ -403,8 +409,10 @@ a.btn {
 }
 
 .hero-section h1 {
-    text-align: center;
-    margin-top: 70px;
+    /*text-align: center;*/
+    display: flex;
+    margin-top: 250px;
+    margin-left: 50px;
     color: #05445E; /* Adjust the text color as needed */
     font-size: 50px;
 }
@@ -426,6 +434,62 @@ a.btn {
 
 .breadcrumb a:hover {
     text-decoration: underline;
+}
+
+/*
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 100%; 
+    background-color: #f1f1f1; 
+    padding: 20px;
+}
+
+.main-content {
+    width: 66.66%; 
+    padding: 20px;} 
+
+*/
+
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.column {
+    width: 30%; /* Adjust width for the first column (one-third) */
+    box-sizing: border-box;
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #f1f1f1; /* Set your desired background color */
+}
+
+.second-column {
+    width: 68%; /* Adjust width for the second column (two-thirds) */
+    box-sizing: border-box;
+    padding: 10px; /* Adjust padding as needed */
+    padding-right: 200px;
+    padding-left: 20px;
+   
+}
+
+.page-content{
+    line-height: 174.2%;
+    padding: 30px 0 ;
+}
+
+/* Adjustments for Small Screens */
+@media screen and (max-width: 768px) {
+    .two-column-section {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .column, .second-column {
+        width: 100%; /* Full width on small screens */
+    }
 }
 
 
@@ -577,6 +641,13 @@ a.btn {
     z-index: 2;
   }
   
+
+  #chatbotPopup span {
+    font-weight: bold;
+  }
+
+
+
   #chatbot:hover {
     transform: translateY(-10px); 
   }

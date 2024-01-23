@@ -355,9 +355,13 @@ a.btn {
     color: #05445E;
 }
 
+.category h4 a {
+    font-weight: bold;
+}
+
 #dropdown-content ul li{
     margin: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     list-style-type: none;
     
 }
@@ -845,6 +849,24 @@ display: none;
 
 /*         featured           */
 
+.feature_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+
+.feature_title h1{
+    font-size: 48px;
+    text-align: center;
+    color: #05445E;
+}
+
+
+
 #featureGrid{
     display: flex;
     flex-direction: row;
@@ -1071,6 +1093,10 @@ display: none;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 2;
+  }
+
+  #chatbotPopup span {
+    font-weight: bold;
   }
   
   #chatbot:hover {
