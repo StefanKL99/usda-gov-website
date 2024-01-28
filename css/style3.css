@@ -461,10 +461,10 @@ a.btn {
 }
 
 .column {
-    width: 30%; /* Adjust width for the first column (one-third) */
+    width: 20%; /* Adjust width for the first column (one-third) */
     box-sizing: border-box;
-    padding: 10px; /* Adjust padding as needed */
-    background-color: #f1f1f1; /* Set your desired background color */
+    padding: 0px; /* Adjust padding as needed */
+    /* background-color: #f1f1f1;  */
 }
 
 .second-column {
@@ -479,6 +479,46 @@ a.btn {
 .page-content{
     line-height: 174.2%;
     padding: 30px 0 ;
+}
+
+.sidebar{
+    background-color: #189AB4;
+    border-radius: 0 20px 20px 0;
+    padding: 30px;
+}
+
+.sidebar-navigation li {
+   list-style-type: none;
+   padding-top: 15px; 
+   padding-bottom: 15px;
+}
+
+.sidebar-navigation div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-navigation div img {
+    width: 10%;
+    height: 10%;
+}
+
+.sidebar-navigation a {
+    text-decoration: none;
+    color: #D4F1F4;
+     
+}
+
+.this-page a{
+    font-weight: bold;
+    color: #fff;
+}
+
+.dropdown-content-2 {
+    display: none;
+    background-color: #D4F1F4;
 }
 
 /* Adjustments for Small Screens */
